@@ -9,6 +9,7 @@ import {
   ChooseVehicle,
   DeleteAccountBottomSheet,
   EditInfo,
+  Help,
   Home,
   InvoiceDetail,
   PaymentMethod,
@@ -16,9 +17,11 @@ import {
   PrivacyPolicy,
   RideBookings,
   TermConditions,
+  SupportChat
 } from '@/screens';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {DrawerNavigator} from './DrawerNavigator';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -98,6 +101,16 @@ export function HomeNavigator() {
       <Stack.Screen
         component={RideBookings}
         name={NAVIGATION.rideBookings}
+        options={{headerShown: false}}
+      />
+       <Stack.Screen
+        component={Help}
+        name={NAVIGATION.help}
+        options={{headerShown: false}}
+      />
+       <Stack.Screen
+        component={SupportChat}
+        name={NAVIGATION.SupportChat}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

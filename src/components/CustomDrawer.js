@@ -86,7 +86,7 @@ const CustomDrawer = () => {
       id: 8,
       title: 'Help',
       image: help,
-      onPress: () => {},
+      onPress: () => navigate(NAVIGATION.help),
     },
   ];
 

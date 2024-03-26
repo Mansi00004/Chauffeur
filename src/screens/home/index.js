@@ -26,7 +26,7 @@ import {Spacer} from '@/theme/Spacer';
 import {useDispatch, useSelector} from 'react-redux';
 import {logout} from '@/redux/actions/authActions';
 import {restAllData} from '@/redux/commonActions';
-import { navigationRef } from '@/navigation/NavigationRef';
+import {navigationRef} from '@/navigation/NavigationRef';
 
 export function Home() {
   const dispatch = useDispatch();
@@ -34,7 +34,7 @@ export function Home() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const isLoadings = useSelector(state => state?.auth?.loading);
-  console.log('jghkdfhkfg', isLoadings);
+  console.log(isLoadings);
 
   const [activeTab, setActiveTab] = useState(0);
 
